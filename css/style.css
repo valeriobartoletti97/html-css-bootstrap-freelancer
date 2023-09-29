@@ -6,12 +6,8 @@
 }
 
 img{
-    width: 100%;
+    display: block;
 }
-body{
-    color: white;
-}
-
 /* utilities */
 
 .my-bg-primary{
@@ -22,4 +18,15 @@ body{
 }
 .my-bg-primary-section{
     background-color: var(--color-my-bg-primary-section);
+}
+
+/* body */
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+.img-width-200{
+    width: 200px;
 }
