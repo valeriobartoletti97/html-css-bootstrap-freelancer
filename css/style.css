@@ -19,7 +19,12 @@ img{
 .my-bg-primary-section{
     background-color: var(--color-my-bg-primary-section);
 }
-
+#hero hr{
+    opacity: 1;
+    width: 100px;
+    display: inline-block;
+    margin: 0;
+}
 /* body */
 body{
     color: white;
@@ -29,4 +34,13 @@ body{
 }
 .img-width-200{
     width: 200px;
+}
+/* header */
+header h2{
+    margin-bottom: 0;
+}
+
+/* hero */
+#hero span{
+    font-size: 0.9em;
 }
