@@ -1,0 +1,25 @@
+/* general */
+:root {
+	--color-my-bg-prymary: #2c3e50;
+	--color-my-bg-footer: #3a546d;
+	--color-my-bg-primary-section: #1abc9c;
+}
+
+img{
+    width: 100%;
+}
+body{
+    color: white;
+}
+
+/* utilities */
+
+.my-bg-primary{
+    background-color: var(--color-my-bg-prymary);
+}
+.my-bg-footer{
+    background-color: var(--color-my-bg-footer);
+}
+.my-bg-primary-section{
+    background-color: var(--color-my-bg-primary-section);
+}
