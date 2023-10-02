@@ -9,11 +9,32 @@
     <title>Start Bootstrap</title>
 </head>
 <body>
-    <header class="my-bg-primary ">
-        <nav class="container d-flex align-items-center justify-content-between text-uppercase">
+    <header class="my-bg-primary">
+       <!--  <nav class="container d-flex align-items-center justify-content-between text-uppercase">
             <h2>Navbar</h2>
             <div class="">Ciao </div>
-        </nav>
+        </nav> -->
+        <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+            <div class="container text-uppercase my-3">
+              <a class="navbar-brand" href="#">Start Bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-bold">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <div id="hero" class="my-bg-primary-section">
@@ -21,13 +42,13 @@
                 <img class="img-width-200 mt-4" src="img/avatar.svg" alt="avatar">
             </div>
             <div class="container text-uppercase text-center">
-                <h2 class="mt-3 fw-bolder">Start Bootstrap</h2>
+                <h1 class="mt-3 fw-bolder">Start Bootstrap</h1>
                 <div class="mt-3">
                     <hr class="border-3 border-white">
                     <i class="fa-solid fa-star fs-5 d-inline-block align-middle"></i>
                     <hr class="border-3 border-white">
                 </div>
-                <span class="d-block mt-3 pb-5 fw-bold">Graphic artist - Web designer - Illustrator</span>
+                <h5 class="d-block mt-3 pb-5 fw-bold">Graphic artist - Web designer - Illustrator</h5>
             </div>
         </div>
         <div class="bg-white text-black">
@@ -38,13 +59,37 @@
                     <i class="fa-solid fa-star fs-5 d-inline-block align-middle"></i>
                     <hr class="border-3 border-black">
                 </div>
-                <div class="row mb-5">
-                    <div class="col-12 col-md-6 col-lg-4">ciao</div>
-                    <div class="col-12 col-md-6 col-lg-4">ciao</div>
-                    <div class="col-12 col-md-6 col-lg-4">ciao</div>
-                    <div class="col-12 col-md-6 col-lg-4">ciao</div>
-                    <div class="col-12 col-md-6 col-lg-4">ciao</div>
-                    <div class="col-12 col-md-6 col-lg-4">ciao</div>
+                <div class="row mb-5 gy-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="my-img-wrapper">
+                            <img src="img/cabin.png" alt="cabin">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="my-img-wrapper">
+                            <img src="img/cake.png" alt="cake">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="my-img-wrapper">
+                            <img src="img/circus.png" alt="circus">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="my-img-wrapper">
+                            <img src="img/game.png" alt="game">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="my-img-wrapper">
+                            <img src="img/safe.png" alt="safe">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="my-img-wrapper">
+                            <img src="img/submarine.png" alt="submarine">
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -67,13 +112,28 @@
             </section>
         </div>
         <div class="bg-white">
-            <section class="container text-black text-center">
-                <h2 class="mt-5 text-uppercase fw-bolder">Contact Me</h2>
-                <div class="mt-3 mb-5">
+            <section class="container text-black">
+                <h2 class="mt-5 text-uppercase fw-bolder text-center">Contact Me</h2>
+                <div class="mt-3 mb-5 text-center">
                     <hr class="border-3 border-black">
                     <i class="fa-solid fa-star fs-5 d-inline-block align-middle"></i>
                     <hr class="border-3 border-black">
                 </div>
+                <form class="mb-5">
+                    <div class="mb-3">
+                      <input type="text" class="form-control only-border-bottom" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control only-border-bottom" placeholder="Email Address">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control only-border-bottom" placeholder="Phone Number">
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="messaggio" class="form-control only-border-bottom" id="" cols="30" rows="10" placeholder="messaggio"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-success me-auto">Send</button>
+                  </form>
             </section>
         </div>
     </main>
@@ -107,5 +167,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
